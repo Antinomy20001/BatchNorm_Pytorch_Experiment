@@ -1,0 +1,2 @@
+# BatchNorm_Pytorch_Experiment
+基于Pytorch实现Batch Normalization和设计一些实验来验证其效果
