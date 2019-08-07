@@ -55,7 +55,7 @@ class Pipeline:
                     len(data), len(self.train_loader.dataset),
                     100. * batch_idx / len(self.train_loader), loss.data.item()))
                 niter = epoch * len(self.train_loader) + batch_idx
-                self.writer.add_scalar('Train/Loss', loss.data.item(), niter)
+                self.writer.add_scalar(self.task_name+'-Train/Loss', loss.data.item(), niter)
 
     def test(self):
         self.model.eval()

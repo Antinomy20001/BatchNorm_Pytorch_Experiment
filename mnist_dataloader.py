@@ -20,9 +20,9 @@ def get_loader(batch_size, num_workers):
     ])
 
     dataset_dir = 'datasets'
-    train_dataset = torchvision.datasets.CIFAR10(
+    train_dataset = torchvision.datasets.MNIST(
         dataset_dir, train=True, transform=train_transform)
-    test_dataset = torchvision.datasets.CIFAR10(
+    test_dataset = torchvision.datasets.MNIST(
         dataset_dir, train=False, transform=test_transform)
 
     train_loader = torch.utils.data.DataLoader(
